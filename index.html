@@ -4,17 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="mail-test.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="./styles/mail-test.css">
+    <link rel="stylesheet" href="./styles/bootstrap.css">
+    <link rel="shortcut icon" href="./img/Fashionista favicon.svg" type="image/x-icon">
+    <title>Fashionista</title>
 
 </head>
 <body>
-   
+    <img class="logo" src="./img/Fashionista logo with wordmark.svg" alt="">
     <form action="" method="">
-        <label for="email"></label>
+        <h2 class="mb-4 text-center">COMING SOON</h2>
+
+        <label class='mb-0'for="name">Full Name:</label>
         <input class='name' type="text" name="name" id="name" placeholder="enter your full Name">
+        <label  class='mt-2 mb-0' for="email">E-mail:</label>
          <input class='email' type="email" name="email" id="email" placeholder="Subscribe with your email">
-         <button type="submit" class="btn-subscribe">Subscribe</button>
+         <button type="submit" class="btn-subscribe">Notify Me</button>
 
          <a class="subscribers-link" href="./getsubscribers.php">See Subscribers List</a>
 
@@ -22,41 +27,9 @@
 </body>
 <!-- getsubscriber.php -->
 <script  src="./js/bootstrap-js/jquery.js" ></script>
-<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="./js/bootstrap-js/bootstrap.js"></script>
+<script src="./js/bootstrap-js/popper.js"></script>
+<script src="./js/custom-js/subscriptionHandler.js"></script>
 
- 
-<script>
-$(document).ready(function(){
-  $('form').submit(function(event){
-    event.preventDefault()
-    const data ={
-        name :event.target.name.value ,
-        email:event.target.email.value ,
 
-    }
-        var fd = new FormData();
-        //very simply, doesn't handle complete objects
-        for(var i in data){
-        fd.append(i,data[i]);
-        }
-     let addsubscribe = async () =>{
-        let post = await fetch('postsubscriber.php', {
-        method: 'POST',
-        body:fd,
-        mode:"cors",
-        }).then(function (response) {
-            if (response.ok) {
-                $( 'subscribers-link' ).css( "visibility", "visible" )
-            } else {
-                console.error('Something went wrong');
-            }
-        })
-       
-     }
-        addsubscribe()
-  })
-
-  });
-
-</script>
 </html>
