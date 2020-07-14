@@ -9,15 +9,21 @@
 
 </head>
 <body>
+   
     <form action="" method="">
         <label for="email"></label>
         <input class='name' type="text" name="name" id="name" placeholder="enter your full Name">
          <input class='email' type="email" name="email" id="email" placeholder="Subscribe with your email">
          <button type="submit" class="btn-subscribe">Subscribe</button>
+
+         <a class="subscribers-link" href="./getsubscribers.php">See Subscribers List</a>
+
     </form>
 </body>
 <!-- getsubscriber.php -->
 <script  src="./js/bootstrap-js/jquery.js" ></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
  
 <script>
 $(document).ready(function(){
@@ -34,11 +40,18 @@ $(document).ready(function(){
         fd.append(i,data[i]);
         }
      let addsubscribe = async () =>{
-        let post = await fetch('getsubscriber.php', {
+        let post = await fetch('postsubscriber.php', {
         method: 'POST',
         body:fd,
         mode:"cors",
-  });
+        }).then(function (response) {
+            if (response.ok) {
+                $( 'subscribers-link' ).css( "visibility", "visible" )
+            } else {
+                console.error('Something went wrong');
+            }
+        })
+       
      }
         addsubscribe()
   })
