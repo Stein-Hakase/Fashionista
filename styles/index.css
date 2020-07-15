@@ -215,7 +215,37 @@ main{
     border-radius: 5px;
     height: 10px;
 }
-/* *********HOW IT WORKS SECTION********* */
+/* *********Extra Features SECTION********* */
+.extra{
+    position: relative;
+    margin-top: 15.5rem;
+    margin-bottom: 5rem;
+}
+.extra-color{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 60%;
+    background-color: #ffffff;
+}
+.extra-title{
+    margin-bottom: 12.5rem;
+
+}
+.extra-card{
+    background-color: #ffffff;
+}
+.extra-card-logo{
+    width: 100px;
+    height: 100px;
+    background: #0C69B5;
+    border-radius: 50%;
+    margin-top: 6rem;
+    margin-bottom: 4rem;
+}
+
+/* *********Extra Features SECTION********* */
+
 /* main Finish */
 
 /* *************** */
