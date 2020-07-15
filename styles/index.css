@@ -1,0 +1,186 @@
+/* general setup  */
+body{
+    margin: 0;
+    padding: 0;
+}
+*{
+    box-sizing: border-box;
+}
+h1{
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 90px;
+}
+h5{
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 37px;
+    letter-spacing: 0.1em;
+    color: #FFBE0B;
+}
+hr{
+    border-top: 3px solid #FFBE0B;
+    width: 31px;
+    margin: auto 6px;
+}
+#notify-btn{
+    height: 81px;
+    background: #0C69B6;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 154%;
+    padding: 1rem 3.5rem;
+}
+#notify-input{
+    height: 81px;
+    max-width: 550px;
+    border: 2px solid #C4C4C4;
+    border-radius: 5px;
+    padding: 16px 34px;
+
+}
+/* end genral setup */
+/* **************** */
+/* Header start */
+.header-wrapper{
+    padding-left: 8rem;
+    overflow-x: hidden;
+}
+.header-left{
+    padding-top: 3.5rem;
+    z-index: 100;
+    background-color: white;
+}
+.logo-container{
+    margin-bottom: 14.25rem;
+}
+.header-text{
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 37px;
+    color: #333333;
+    width: 60%;
+}
+.header-form{
+    margin-top: 7.8rem;
+    margin-bottom: 5.5rem;
+}
+.form-title{
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 45px;
+    color: #333333
+}
+/* header rigth (circles) */
+.header-right{
+    position: relative;
+        background:
+            linear-gradient(90deg,black (22px- 1px), transparent 1%) center ,
+            linear-gradient( hsl (256,33,10)  (22px- 1px), transparent 1%) center,
+            hsl(256,33,70);
+        background-size: 22px 22px;
+    
+}
+.circle{
+    width: 100%;
+    height: 25%;
+    border-radius: 50%;
+    z-index: 10;
+}
+.circle1{
+    position: absolute;
+    background-color: #FFBE0B;
+    top: -15%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.circle2{
+    position: absolute;
+    background-color: #0C69B5;
+    top:  8%;
+    left:-55% ;
+}
+.circle3{
+    position: absolute;
+    background-color:#FCA311;
+    top: 8%;
+    right: -55%;
+}
+.circle4{
+    position: absolute;
+    background-color: #0C69B5;
+    top: 33%;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+.circle5{
+    position: absolute;
+    background-color:#FFBE0B;
+    top: 60%;
+    left: -55%;
+}
+.circle6{
+    position: absolute;
+    background-color:#0C69B5;
+    top: 60%;
+    right: -55%;
+}
+.dots{
+    height: 19.36%;
+    width: 100%;
+}
+.red-dots{
+    position: absolute;
+    top: 0;
+    background: url('/img/Red\ dots.png')  no-repeat;
+    }
+.green-dots{
+    position: absolute;
+    top: 20%;
+    background: url('/img/Green\ dots.png')  no-repeat;
+    
+}
+.yellow-dots{
+    position: absolute;
+    top: 40%;
+    background: url('/img/Yellow\ dots.png') no-repeat ;
+    
+}
+.blue-dots{
+    position: absolute;
+    top: 60%;
+    background: url('/img/Blue\ dots.png') no-repeat ;
+    
+}
+.yellow2-dots{
+    position: absolute;
+    top: 80%;
+    background: url('/img/Yellow\ dots-1.png') no-repeat;
+    
+}
+
+/* header Finish */
+
+/* *************** */
+/* main start */
+
+/* main Finish */
+
+/* *************** */
+
+/* Footer start */
+/* Footer Finish */
+/* *************** */
+
+/* **************************** */
+/* queries */
+@media only screen and (max-width:800px){
+    .header-left{
+        margin-top: 3.5rem;
+        margin-left: 2rem;
+    }
+
+}
