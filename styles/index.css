@@ -52,7 +52,7 @@ hr{
     line-height: 154%;
     
 }
-#notify-input{
+#email{
     height: 81px;
     /* max-width: 550px; */
     border: 2px solid #C4C4C4;
@@ -121,8 +121,7 @@ hr{
 }
 .circle{
     width: 100%;
-    height: 25%; 
-    /* padding-top: 100%; */
+    padding-top: 100%;
     border-radius: 50%;
     z-index: 10;
 }
@@ -352,7 +351,6 @@ main{
     background-color: #ffffff;
     z-index: 100;
     padding-bottom: 3rem;
-    max-height:573px;
     box-shadow: 0px 4px 35px rgba(6, 33, 55, 0.04);
     border-radius: 5px
  }
@@ -436,7 +434,7 @@ footer{
     margin-bottom: 2.5rem;
     text-align: center;
 }
-footer #notify-input::placeholder{
+footer #email::placeholder{
     color: #FFFFFF;
     font-style: normal;
     font-weight: normal;
@@ -476,6 +474,16 @@ footer #notify-input::placeholder{
             background: white;
     }
 }
+@media only screen and (max-width:630px){
+    .extra-semi-circle3 {
+        bottom: 65%;
+    }
+}
+@media only screen and (max-width:550px){
+    .circle-bot {
+        top: 68%;
+    }
+}
 @media only screen and (max-width:469px){
     h1{
         font-size: 40px;
@@ -491,20 +499,35 @@ footer #notify-input::placeholder{
     
     }
     .circle-bot{
-        top: 72%;
+        top:68%;
         left: 8.1%;
     }
     .work-semi-circle3 {
         right:0
     }
-    .extra-semi-circle3 {
-        bottom: 44%;
-    }
+  
     .preshot-title{
        
         margin-left: 0;
     }
+    .extra-semi-circle4 {
+      display: none;
+    }
     
+}
+@media only screen and (max-width:300px){
+    .words-fashionabl{
+        font-size: 32px;
+    }
+    .top-semi-circle2 {
+        top: 70%;
+    }
+    .circle-top {
+        top: 15%;
+    }
+    .circle-bot {
+        top: 80%;
+    }
 }
 /* ***************Animations */
 /* Extra section circles animation */
