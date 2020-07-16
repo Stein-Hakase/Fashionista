@@ -404,6 +404,9 @@ main{
     margin: 8rem auto ;
     background: url('/img/preshot-bg-side.svg') left no-repeat;
 }
+.preshot>div{
+    background-color: white;
+}
 .preshot-title{
     margin-bottom: 7rem;
     margin-left: 14rem;
