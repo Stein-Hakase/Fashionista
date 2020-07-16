@@ -12,6 +12,12 @@ h1{
     font-size: 60px;
     line-height: 90px;
 }
+h2{
+    font-weight: bold;
+    font-size: 70px;
+    line-height: 40px;
+    text-align: center;
+}
 h3{
     font-weight: bold;
     font-size: 30px;
@@ -92,7 +98,8 @@ hr{
 }
 .circle{
     width: 100%;
-    height: 25%;
+    height: 25%; 
+    /* padding-top: 100%; */
     border-radius: 50%;
     z-index: 10;
 }
@@ -219,22 +226,30 @@ main{
 .extra{
     position: relative;
     margin-top: 15.5rem;
-    margin-bottom: 5rem;
+    padding-bottom: 5rem;
 }
 .extra-color{
     position: absolute;
     bottom: 0;
     left: 0;
-    height: 60%;
+    height: 50%;
     background-color: #ffffff;
+    width: 100%;
+    z-index: 10;
 }
 .extra-title{
     margin-bottom: 12.5rem;
 
 }
 .extra-card{
+    position: relative;
     background-color: #ffffff;
-}
+    z-index: 100;
+    padding-bottom: 3rem;
+    max-height:573px;
+    box-shadow: 0px 4px 35px rgba(6, 33, 55, 0.04);
+    border-radius: 5px
+ }
 .extra-card-logo{
     width: 100px;
     height: 100px;
@@ -243,8 +258,43 @@ main{
     margin-top: 6rem;
     margin-bottom: 4rem;
 }
+.extra-card-text{
+    font-size: 20px;
+    line-height: 30px;
+    width: 78%;
+}
+.extra-card-bar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    box-shadow: 0px 4px 35px rgba(6, 33, 55, 0.04);
+    border-radius: 5px;
+    width: 10px;
+}
+.words{
+    padding-top: 12rem;
+    background-color: white;
 
-/* *********Extra Features SECTION********* */
+}
+.words-fill-blue{
+    color: #0C69B5;
+}
+.words-fill-yellow{
+    color: #FFBE0B;
+}
+.words-border-blue{
+    text-shadow: -1px 0  #0C69B5, 0 1px  #0C69B5, 1px 0  #0C69B5, 0 -1px  #0C69B5;
+    color: white;
+}
+.words-border-yellow{
+    text-shadow: -1px 0  #FFBE0B, 0 1px  #FFBE0B, 1px 0  #FFBE0B, 0 -1px  #FFBE0B;
+    color: white;
+
+}
+.words-spacing{
+    margin: 6rem auto;
+}
 
 /* main Finish */
 
