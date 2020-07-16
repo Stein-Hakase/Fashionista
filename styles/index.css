@@ -3,6 +3,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Noto Sans', sans-serif;
+    overflow-x: hidden;
 }
 *{
     box-sizing: border-box;
@@ -201,6 +202,39 @@ main{
     background: #FDFDFD
 }
 /* *********HOW IT WORKS SECTION********* */
+.work{
+    position: relative;
+}
+.work-semi-circle1{
+    position: absolute;
+    top: 35%;
+    left: 5%;
+}
+.work-semi-circle2{
+    position: absolute;
+    top: 38%;
+    right: 27%;
+}
+.work-semi-circle3{
+    position: absolute;
+    bottom: 40%;
+    right: -5%;
+}
+.work-semi-circle4{
+    position: absolute;
+    bottom: 8%;
+    left: -1%;
+}
+.work-semi-circle5{
+    position: absolute;
+    bottom: 7%;
+    left: 41%;
+}
+.work-semi-circle6{
+    position: absolute;
+    bottom: 8%;
+    right: 1%;
+}
 .work-cards{
     padding-bottom: 5rem;
     justify-content: space-around;
@@ -245,6 +279,56 @@ main{
     margin-top: 15.5rem;
     padding-bottom: 5rem;
 }
+.extra-semi-circle1{
+    position: absolute;
+    top: 20%;
+    left: 22%;
+}
+.extra-semi-circle2{
+    position: absolute;
+    top: 24%;
+    right: 28%;
+    z-index: 1000;
+}
+.extra-semi-circle3{
+    position: absolute;
+    bottom: 40%;
+    left: 21%;
+    z-index: 1000;
+}
+.extra-semi-circle4{
+    position: absolute;
+    bottom: 35%;
+    right: 24%;
+    z-index: 1000;
+}
+.extra-semi-circle5{
+    position: absolute;
+    bottom: 0%;
+    left: 24%;
+    z-index: 1000;
+}
+.extra-semi-circle6{
+    position: absolute;
+    bottom: 0;
+    right: 20%;
+    z-index: 1000;
+}
+.circle-top{
+    position: absolute;
+    top: 2.2%;
+    right: 12.2%;
+    z-index: 100;
+
+
+}
+.circle-bot{
+    position: absolute;
+    top: 49%;
+    left: 8.1%;
+    z-index: 100;
+}
+
 .extra-color{
     position: absolute;
     bottom: 0;
@@ -352,6 +436,7 @@ footer #notify-input::placeholder{
 /* **************************** */
 /* queries */
 @media only screen and (max-width:800px){
+    
     .header-wrapper{
         margin-top: 3.5rem;
         padding-left: 0;
@@ -370,4 +455,26 @@ footer #notify-input::placeholder{
         font-size: 40px;
         line-height: 60px;
     }
+    h2{
+        font-size: 45px;
+    }
+    .circle-top{
+        top: 10%;
+        right: 12.2%;
+    
+    
+    }
+    .circle-bot{
+        top: 72%;
+        left: 8.1%;
+    }
+    .work-semi-circle3 {
+        right:0
+    }
+    .extra-semi-circle3 {
+        bottom: 44%;
+    }
 }
+/* ***************Animations */
+/* Extra section circles animation */
+ 
