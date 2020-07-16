@@ -12,6 +12,7 @@
       href="./img/Fashionista favicon.svg"
       type="image/x-icon"
     />
+ 
     <title>Fashionista</title>
   </head>
   <body> 
@@ -93,7 +94,7 @@
 
    <!-- Main start here -->
    <main>
-     <section class="container work">
+     <section class="container work " >
        <!-- *** design little circles / dots ... -->
         <img class="work-semi-circle1" src="/img/work-section/Blue semi circle-4.png" alt="">
         <img class="work-semi-circle2" src="/img/work-section/Blue semi circle-3.png" alt="">
@@ -180,7 +181,7 @@
           </div>
         </div>
      </section>
-     <section class="container-fluid extra">
+     <section class="container-fluid extra " >
       <img class="extra-semi-circle1" src="/img/work-section/Blue semi circle-3.png" alt="">
       <img class="extra-semi-circle2" src="/img/work-section/Blue semi circle-3.png" alt="">
       <img class="extra-semi-circle3" src="/img/work-section/Blue semi circle-1.png" alt="">
@@ -224,7 +225,7 @@
        <div class="extra-color"></div>
 
      </section>
-     <section class="container-fluid words">
+     <section class="container-fluid words ">
        <div class="row   words-spacing">
          <div class="col-md-4 my-5">
            <h2 class="words-border-blue">Cool</h2>
@@ -251,13 +252,13 @@
      style="height: 14rem;">
     </div>
      <!-- Pres-shot section -->
-     <section class="bg-white">
+     <section class="bg-white ">
       <h3 class="preshot-title">Pre-shot to our App<hr class="h2-border"></h3>
       <!-- **************************** -->
-      <div class="container-fluid preshot">
+      <div class="container-fluid preshot panel ">
         <div class="container ">
 
-          <div class="row justify-content-between">
+          <div class="row justify-content-between ">
 
             <div class="col-md-8 d-flex flex-column justify-content-center">
                 <p class="preshot-text">This feature allows you to upload 
@@ -273,10 +274,10 @@
         </div>
       </div>
       <!-- **************************** -->
-      <div class="container-fluid preshot">
+      <div class="container-fluid preshot panel  ">
         <div class="container ">
 
-          <div class="row justify-content-between">
+          <div class="row justify-content-between ">
 
             <div class="col-md-8 d-flex flex-column justify-content-center">
                 <p class="preshot-text">This feature allows you to upload 
@@ -292,29 +293,10 @@
         </div>
       </div>
       <!-- **************************** -->
-      <div class="container-fluid preshot">
-        <div class="container ">
+      <div class="container-fluid preshot panel ">
+        <div class="container  ">
 
-          <div class="row justify-content-between">
-
-            <div class="col-md-8 d-flex flex-column justify-content-center">
-                <p class="preshot-text">This feature allows you to upload 
-                  your personal wardrobe cloths for
-                   the app to give you cool combinations</p>
-            </div>
-            <div class="col-md-4 ">
-              <img class="img-fluid"
-             
-              src="./img/preshot-screen.png" alt="">
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- **************************** -->
-      <div class="container-fluid preshot">
-        <div class="container ">
-
-          <div class="row justify-content-between">
+          <div class="row justify-content-between ">
 
             <div class="col-md-8 d-flex flex-column justify-content-center">
                 <p class="preshot-text">This feature allows you to upload 
@@ -330,10 +312,10 @@
         </div>
       </div>
       <!-- **************************** -->
-      <div class="container-fluid preshot">
-        <div class="container ">
+      <div class="container-fluid preshot panel ">
+        <div class="container  ">
 
-          <div class="row justify-content-between">
+          <div class="row justify-content-between ">
 
             <div class="col-md-8 d-flex flex-column justify-content-center">
                 <p class="preshot-text">This feature allows you to upload 
@@ -349,10 +331,10 @@
         </div>
       </div>
       <!-- **************************** -->
-      <div class="container-fluid preshot">
-        <div class="container ">
+      <div class="container-fluid preshot panel ">
+        <div class="container  ">
 
-          <div class="row justify-content-between">
+          <div class="row justify-content-between ">
 
             <div class="col-md-8 d-flex flex-column justify-content-center">
                 <p class="preshot-text">This feature allows you to upload 
@@ -367,7 +349,26 @@
           </div>
         </div>
       </div>
+      <!-- **************************** -->
+      <div class="container-fluid preshot panel">
+        <div class="container  ">
 
+          <div class="row justify-content-between ">
+
+            <div class="col-md-8 d-flex flex-column justify-content-center">
+                <p class="preshot-text">This feature allows you to upload 
+                  your personal wardrobe cloths for
+                   the app to give you cool combinations</p>
+            </div>
+            <div class="col-md-4 ">
+              <img class="img-fluid"
+             
+              src="./img/preshot-screen.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="spacer " style="height: 5rem;"></div>
      </section>
    </main>
    <!-- Main Finish here -->
@@ -375,6 +376,7 @@
 <!-- ******************************* -->
 
    <!-- Footer start here -->
+   <div class="panel">
    <footer class="">
       <h1 class="col-md-8 mx-auto text-center text-white footer-title">
         Haven’t subscribed to our waiting list yet? </h1>
@@ -404,13 +406,48 @@
         </div>
    </footer>
    <!-- Footer Finish here -->
-
+  </div>
   </body>
   <!-- getsubscriber.php -->
   <script src="./js/bootstrap-js/jquery.js"></script>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js'></script>
+  <script src="./ScrollMagic/scrollmagic/uncompressed/ScrollMagic.js"></script>
+  <script src="./ScrollMagic/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
+  <script src="./ScrollMagic/scrollmagic/uncompressed/plugins/jquery.ScrollMagic.js"></script>
+
+
   <script src="./js/bootstrap-js/bootstrap.js"></script>
   <script src="./js/bootstrap-js/popper.js"></script>
   <script src="./js/custom-js/subscriptionHandler.js"></script>
+
+  <script>
+    $(function () { // wait for document ready
+      // init
+      var controller = new ScrollMagic.Controller({
+        globalSceneOptions: {
+          triggerHook: 'onLeave',
+          duration: "100%" // this works just fine with duration 0 as well
+          // However with large numbers (>20) of pinned sections display errors can occur so every section should be unpinned once it's covered by the next section.
+          // Normally 100% would work for this, but here 200% is used, as Panel 3 is shown for more than 100% of scrollheight due to the pause.
+        }
+      });
+  
+      // get all slides
+      var slides = document.querySelectorAll("div.panel");
+  
+      // create scene for every slide
+      for (var i=0; i<slides.length; i++) {
+        new ScrollMagic.Scene({
+            triggerElement: slides[i]
+          })
+          .setPin(slides[i], {pushFollowers: false})
+          .addIndicators() // add indicators (requires plugin)
+          .addTo(controller);
+      }
+    });
+  </script>
+
 </html>
 <!-- <div class="container-fluid">
   <div class="row">

@@ -401,7 +401,7 @@ main{
 }
 /* *Preshot section */
 .preshot{
-    margin: 5rem auto ;
+    margin: 8rem auto ;
     background: url('/img/preshot-bg-side.svg') left no-repeat;
 }
 .preshot-title{
