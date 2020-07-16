@@ -44,11 +44,11 @@ hr{
     font-weight: bold;
     font-size: 20px;
     line-height: 154%;
-    padding: 1rem 3.5rem;
+    
 }
 #notify-input{
     height: 81px;
-    max-width: 550px;
+    /* max-width: 550px; */
     border: 2px solid #C4C4C4;
     border-radius: 5px;
     padding: 16px 34px;
@@ -95,6 +95,23 @@ hr{
             hsl(256,33,70);
         background-size: 22px 22px;
     
+}
+.top-semi-circle1{
+    position: absolute;
+    right: 25%;
+    top: 20%;
+}
+.top-semi-circle2{
+    position: absolute;
+    top: 55%;
+    left: 2.5%;
+
+}
+.top-semi-circle3{
+    position: absolute;
+    top: 55.5%;
+    right: 16%;
+
 }
 .circle{
     width: 100%;
@@ -317,6 +334,10 @@ footer{
 }
 footer #notify-input::placeholder{
     color: #FFFFFF;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 154%;
 }
 .copyright{
     font-size: 20px;
@@ -331,9 +352,22 @@ footer #notify-input::placeholder{
 /* **************************** */
 /* queries */
 @media only screen and (max-width:800px){
-    .header-left{
+    .header-wrapper{
         margin-top: 3.5rem;
-        margin-left: 2rem;
+        padding-left: 0;
     }
-
+    .top-semi-circle2 {
+        top: 65%;
+        z-index: 1000;
+    }
+    .header-text {
+        width: 80%;
+        /* margin: 0 auto; */
+    }
+}
+@media only screen and (max-width:469px){
+    h1{
+        font-size: 40px;
+        line-height: 60px;
+    }
 }

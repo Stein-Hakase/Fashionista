@@ -16,11 +16,16 @@
   </head>
   <body> 
    <!-- Header start here -->
-  <header>
+  <header class="position-relative">
+    <img class="top-semi-circle2" src="./img/Blue semi circle-1.png" alt="">
     <div class="container-fluid">
+      
       <div class="row  header-wrapper">
         <!-- Left section with title and logo  -->
-        <div class="header-left col-md-9 ">
+        <div class="header-left col-lg-9 ">
+          <img class='top-semi-circle3' src="./img/yellow quartcircle.png" alt="">
+
+          <img class="top-semi-circle1" src="./img/Blue semi circle.png" alt="">
               <div class=" logo-container ">
                 <img src="./img/Fashionista logo with wordmark.svg" alt="Fashionista">
               </div>
@@ -31,7 +36,7 @@
                     <hr> 
                   </div>
                 <!-- title -->
-                  <h1 class="mb-5">
+                  <h1 class="mb-5 ">
                     A great app to make cloth selection easy and quick
                   </h1>
                 <!-- header description text -->
@@ -41,14 +46,15 @@
                  <!-- header form -->
                  <form class="header-form" >
                    <span class="form-title">Subscribe to our waiting list</span>
-                  <div class="input-group mb-3">
+                  <div class="my-2 mx-auto row input-group mb-3">
                     <input type="text" 
-                    class="form-control" 
+                    class="my-2 form-control col-md-7" 
                     id="notify-input" 
                     placeholder="Enter your Email to get notified when this product goes live" 
-                    aria-label="Recipient's username" aria-describedby="basic-addon2">
-                    <div class="input-group-append">
-                      <button class="btn btn-outline-secondary" id='notify-btn'type="button">Notify Me</button>
+                    aria-label="Recipient's username" 
+                    aria-describedby="basic-addon2">
+                    <div class="my-2 col-md-3 input-group-append px-0">
+                      <button class="w-100 btn btn-outline-secondary" id='notify-btn'type="button">Notify Me</button>
                     </div>
                   </div>
                  </form>
@@ -58,7 +64,7 @@
         </div>
 
         <!-- Right section with circles design -->
-        <div class="header-right col-md-3 ">
+        <div class="header-right col-lg-3 ">
            <!-- Backgrounf colored dots -->
             <div class=" dots red-dots"></div>
             <div class=" dots green-dots"></div>
@@ -219,17 +225,17 @@
         <p class="footer-text">
           Do not panick, you are still in time
         </p>
-        <form class=" mx-auto header-form "
-        style="max-width:  689px;" >
-         <div class="input-group mb-3">
+        <form class=" header-form "
+        >
+         <div class=" mx-auto row input-group mb-3 justify-content-center my-2">
            <input type="text" 
-           class="form-control" 
+           class="form-control col-md-5 my-2" 
            id="notify-input" 
            placeholder="Enter your Email to get notified when this product goes live" 
            aria-label="Recipient's username" aria-describedby="basic-addon2"
            style="background:none; color: #ffff;">
-           <div class="input-group-append">
-             <button class="btn btn-outline-secondary" 
+           <div class="input-group-append  col-md-2 px-0">
+             <button class="my-2 btn btn-outline-secondary w-100" 
              id='notify-btn'type="button"
              style="background: #FFBE0B;"
              >Notify Me</button>
