@@ -19,6 +19,11 @@ h2{
     line-height: 40px;
     text-align: center;
 }
+.h2-border{
+    width: 43px;
+    height: 6px;
+    border-top: 6px solid #1034A6;
+}
 h3{
     font-weight: bold;
     font-size: 30px;
@@ -39,7 +44,7 @@ hr{
 }
 #notify-btn{
     height: 81px;
-    background: #0C69B6;
+    background: #1034A6;
     border-radius: 5px;
     color: white;
     font-weight: bold;
@@ -130,7 +135,7 @@ hr{
 }
 .circle2{
     position: absolute;
-    background-color: #0C69B5;
+    background-color: #1034A6;
     top:  8%;
     left:-55% ;
 }
@@ -142,7 +147,7 @@ hr{
 }
 .circle4{
     position: absolute;
-    background-color: #0C69B5;
+    background-color: #1034A6;
     top: 33%;
     left: 50%;
     transform: translateX(-50%);
@@ -156,7 +161,7 @@ hr{
 }
 .circle6{
     position: absolute;
-    background-color:#0C69B5;
+    background-color:#1034A6;
     top: 60%;
     right: -55%;
 }
@@ -354,7 +359,7 @@ main{
 .extra-card-logo{
     width: 100px;
     height: 100px;
-    background: #0C69B5;
+    background: #1034A6;
     border-radius: 50%;
     margin-top: 6rem;
     margin-bottom: 4rem;
@@ -379,13 +384,13 @@ main{
 
 }
 .words-fill-blue{
-    color: #0C69B5;
+    color: #1034A6;
 }
 .words-fill-yellow{
     color: #FFBE0B;
 }
 .words-border-blue{
-    text-shadow: -1px 0  #0C69B5, 0 1px  #0C69B5, 1px 0  #0C69B5, 0 -1px  #0C69B5;
+    text-shadow: -1px 0  #1034A6, 0 1px  #1034A6, 1px 0  #1034A6, 0 -1px  #1034A6;
     color: white;
 }
 .words-border-yellow{
@@ -396,14 +401,29 @@ main{
 .words-spacing{
     margin: 6rem auto;
 }
-
+/* *Preshot section */
+.preshot{
+    margin: 5rem auto ;
+    background: url('/img/preshot-bg-side.svg') left no-repeat;
+}
+.preshot-title{
+    margin-bottom: 7rem;
+    margin-left: 14rem;
+}
+.preshot-text{
+    font-size: 30px;
+    line-height: 45px;
+    color: #000000;
+    padding: .5rem 6rem;
+    margin: 0 auto;
+}
 /* main Finish */
 
 /* *************** */
 
 /* Footer start */
 footer{
-    background-color: #0C69B5;
+    background-color: #1034A6;
 }
 .footer-title{
     padding-top: 7.5rem;
@@ -427,7 +447,7 @@ footer #notify-input::placeholder{
     font-size: 20px;
     line-height: 40px;
     text-align: center;
-    color: #0C69B5;
+    color: #1034A6;
     padding: 2rem .5rem;
 }
 /* Footer Finish */
@@ -449,6 +469,12 @@ footer #notify-input::placeholder{
         width: 80%;
         /* margin: 0 auto; */
     }
+    .preshot-text{
+        
+        padding: .5rem 1rem;
+        margin: 0 auto;
+            background: white;
+    }
 }
 @media only screen and (max-width:469px){
     h1{
@@ -459,7 +485,7 @@ footer #notify-input::placeholder{
         font-size: 45px;
     }
     .circle-top{
-        top: 10%;
+        top: 12%;
         right: 12.2%;
     
     
@@ -474,6 +500,11 @@ footer #notify-input::placeholder{
     .extra-semi-circle3 {
         bottom: 44%;
     }
+    .preshot-title{
+       
+        margin-left: 0;
+    }
+    
 }
 /* ***************Animations */
 /* Extra section circles animation */
