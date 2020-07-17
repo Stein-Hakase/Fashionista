@@ -1,5 +1,8 @@
 $(function () { // wait for document ready
+    
   var bool=false
+   
+
   // init
   // trigger animation only in big screens
   function resize() {
@@ -28,6 +31,7 @@ $(function () { // wait for document ready
     }
   });
   var slides = document.querySelectorAll("div.panel");
+  resize();
 
 
   // get all slides
