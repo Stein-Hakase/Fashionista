@@ -18,7 +18,7 @@ $(document).ready(function(){
         }).then(function (response) {
             if (response.ok) {
                 alert('Congratulations , your mail was saved  !! ')
-                $( '.subscribers-link' ).css( "visibility", "visible" )
+                // $( '.subscribers-link' ).css( "visibility", "visible" )
                 email=''
 
             } else {

@@ -271,7 +271,7 @@
             <div class="col-md-4 ">
               <img class="img-fluid "
              
-              src="./img/screen.png" alt="">
+              src="./img/screens/screen (1).png" alt="">
             </div>
           </div>
         </div>
@@ -292,7 +292,7 @@
             <div class="col-md-4 ">
               <img class="img-fluid "
              
-              src="./img/screen.png" alt="">
+              src="./img/screens/screen (2).png" alt="">
             </div>
           </div>
           
@@ -317,7 +317,7 @@
             <div class="col-md-4 ">
               <img class="img-fluid "
              
-              src="./img/screen.png" alt="">
+              src="./img/screens/screen (3).png" alt="">
             </div>
           </div>
         </div>
@@ -342,7 +342,7 @@
             <div class="col-md-4 ">
               <img class="img-fluid "
              
-              src="./img/screen.png" alt="">
+              src="./img/screens/screen (4).png" alt="">
             </div>
           </div>
         </div>
@@ -366,7 +366,7 @@
             <div class="col-md-4 ">
               <img class="img-fluid "
              
-              src="./img/screen.png" alt="">
+              src="./img/screens/screen (5).png" alt="">
             </div>
           </div>
         </div>
@@ -390,7 +390,7 @@
             <div class="col-md-4 ">
               <img class="img-fluid "
              
-              src="./img/screen.png" alt="">
+              src="./img/screens/screen (6).png" alt="">
             </div>
           </div>
         </div>
@@ -447,65 +447,5 @@
   <script src="./js/bootstrap-js/popper.js"></script>
   <script src="./js/custom-js/subscriptionHandler.js"></script>
 
-  <script>
-    $(function () { // wait for document ready
-      // init
-      var controller = new ScrollMagic.Controller({
-        globalSceneOptions: {
-          triggerHook: 'onLeave',
-          duration: "100%" // this works just fine with duration 0 as well
-          // However with large numbers (>20) of pinned sections display errors can occur so every section should be unpinned once it's covered by the next section.
-          // Normally 100% would work for this, but here 200% is used, as Panel 3 is shown for more than 100% of scrollheight due to the pause.
-        }
-      });
-  
-      // get all slides
-      var slides = document.querySelectorAll("div.panel");
-  
-      // create scene for every slide
-      for (var i=0; i<slides.length; i++) {
-        new ScrollMagic.Scene({
-            triggerElement: slides[i]
-          })
-          .setPin(slides[i], {pushFollowers: false})
-          // .addIndicators() // add indicators (requires plugin)
-          .addTo(controller);
-      }
-    });
-  </script>
-
+  <script src="./js/custom-js/scrollAnimation.js"> </script>
 </html>
-<!-- <div class="container-fluid">
-  <div class="row">
-    <div class="col-lg-12 mt-5">
-      <h1 class="text-center">
-        A great app to make cloth selection easy and quick
-      </h1>
-    </div>
-
-    <div class="col-lg-12 d-flex justify-content-center">
-      <form class="d-flex flex-column">
-        <h2 class="mb-4 text-center">COMING SOON</h2>
-        <input
-          class="name"
-          type="text"
-          name="name"
-          id="name"
-          placeholder="enter your full Name"
-        />
-        <input
-          class="email"
-          type="email"
-          name="email"
-          id="email"
-          placeholder="Subscribe with your email"
-        />
-        <button type="submit" class="btn-subscribe">Notify Me</button>
-
-        <a class="subscribers-link" href="./getsubscribers.php"
-          >See Subscribers List</a
-        >
-      </form>
-    </div>
-  </div>
-</div> -->
