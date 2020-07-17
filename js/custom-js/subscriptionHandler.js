@@ -2,9 +2,8 @@ $(document).ready(function(){
   $('form').submit(function(event){
     event.preventDefault()
     const data ={
-        name :event.target.name.value ,
+        // name :event.target.name.value ,
         email:event.target.email.value ,
-
     }
         var fd = new FormData();
         //very simply, doesn't handle complete objects

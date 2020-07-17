@@ -30,6 +30,12 @@ h3{
     line-height: 40px;
     color: #000000;
 }
+h4{
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 41px;
+    color: #1034A6;
+}
 h5{
     font-weight: 800;
     font-size: 15px;
@@ -402,7 +408,7 @@ main{
 /* *Preshot section */
 .preshot{
     margin: 8rem auto ;
-    background: url('/img/preshot-bg-side.svg') left no-repeat;
+    /* background: url('/img/preshot-bg-side.svg') left no-repeat; */
 }
 .preshot>div{
     background-color: white;
@@ -414,9 +420,10 @@ main{
 .preshot-text{
     font-size: 30px;
     line-height: 45px;
-    color: #000000;
-    padding: .5rem 6rem;
     margin: 0 auto;
+    font-style: normal;
+    font-weight: normal;
+    color: #828282;
 }
 /* main Finish */
 
@@ -474,7 +481,6 @@ footer #email::placeholder{
         
         padding: .5rem 1rem;
         margin: 0 auto;
-            background: white;
     }
 }
 @media only screen and (max-width:630px){
