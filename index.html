@@ -41,9 +41,11 @@
                     <hr> 
                   </div>
                 <!-- title -->
-                  <h1 class="mb-5 ">
+                <div id="text-cs2">
+                  <h1 class="mb-5 " >
                     A great app to make cloth selection easy and quick
                   </h1>
+                </div>
                 <!-- header description text -->
                  <p class="header-text ">Fashionista App is developed to make awesome cloth
                     combination for any event of your choice using Artifical 
@@ -480,6 +482,8 @@
     
     AOS.init();
     gsap.from("#logo", {duration: 3, x: 300, opacity: 0, scale: 0.5});
-    gsap.to('#text-cs', { duration: 2.5, ease: "bounce.out",delay :1 ,y: -500 });
+    gsap.to('#text-cs', { duration: 2.5, ease: "bounce.out",delay :1.8 ,y: -500 });
+    gsap.to('#text-cs2', { duration: 2.5, ease: "bounce.out",delay :1 ,y: -500 });
+
   </script>
 </html>

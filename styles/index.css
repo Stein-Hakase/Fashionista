@@ -77,6 +77,10 @@ hr{
     position: relative;
     top: 500px;
 }
+#text-cs2{
+    position: relative;
+    top: 500px; 
+}
 .header-left{
     padding-top: 3.5rem;
     z-index: 100;
