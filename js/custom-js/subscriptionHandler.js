@@ -19,6 +19,8 @@ $(document).ready(function(){
             if (response.ok) {
                 alert('Congratulations , your mail was saved  !! ')
                 $( '.subscribers-link' ).css( "visibility", "visible" )
+                email=''
+
             } else {
                 console.error('Something went wrong');
             }
