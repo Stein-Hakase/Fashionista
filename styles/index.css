@@ -73,6 +73,10 @@ hr{
     padding-left: 8rem;
     overflow-x: hidden;
 }
+#text-cs{
+    position: relative;
+    top: 500px;
+}
 .header-left{
     padding-top: 3.5rem;
     z-index: 100;
@@ -130,6 +134,8 @@ hr{
     padding-top: 100%;
     border-radius: 50%;
     z-index: 10;
+   
+
 }
 .circle1{
     position: absolute;
@@ -137,18 +143,25 @@ hr{
     top: -15%;
     left: 50%;
     transform: translateX(-50%);
+    animation : bounce-x 2.05s linear 0s infinite alternate, 
+    bounce-y 2.4s linear 0s infinite alternate;
 }
 .circle2{
     position: absolute;
     background-color: #1034A6;
     top:  8%;
     left:-55% ;
+    animation : bounce-x3 3s linear 0s infinite alternate, 
+    bounce-y3 1.5s linear 0s infinite alternate;
+    
 }
 .circle3{
     position: absolute;
     background-color:#FCA311;
     top: 8%;
     right: -55%;
+    animation : bounce-x2 5s linear 0s infinite alternate, 
+    bounce-y2 5s linear 0s infinite alternate;
 }
 .circle4{
     position: absolute;
@@ -156,6 +169,8 @@ hr{
     top: 33%;
     left: 50%;
     transform: translateX(-50%);
+    animation : bounce-x 2.5s linear 0s infinite alternate, 
+    bounce-y 3.5s linear 0s infinite alternate;
 
 }
 .circle5{
@@ -163,12 +178,17 @@ hr{
     background-color:#FFBE0B;
     top: 60%;
     left: -55%;
+    animation : bounce-x4 3s linear 0s infinite alternate, 
+    bounce-y4 2.5s linear 0s infinite alternate;
+    
 }
 .circle6{
     position: absolute;
     background-color:#1034A6;
     top: 60%;
     right: -55%;
+    animation : bounce-x5 3s linear 0s infinite alternate, 
+    bounce-y5 2.5s linear 0s infinite alternate;
 }
 .dots{
     height: 19.36%;
@@ -492,6 +512,10 @@ footer #email::placeholder{
     .circle-bot {
         top: 68%;
     }
+    .preshot-text{
+        font-size: 18PX;
+        line-height: 30PX;
+    }
 }
 @media only screen and (max-width:469px){
     h1{
@@ -539,5 +563,98 @@ footer #email::placeholder{
     }
 }
 /* ***************Animations */
+
+/* circle 1 */
+@keyframes bounce-x{
+     0%
+{    left: 0
+}  100%
+{    left: 50%
+}}
+@keyframes bounce-y
+{  0%
+{    top: 0
+}  100%
+{    top: 71%
+}}
+/* circle 2 */
+@keyframes bounce-x2{
+    0%
+{    right: 0;
+     opacity:.3
+}
+    50%
+{    right: 30%;
+     opacity: .5;
+}
+    100%
+{    right: 50%;
+    opacity: 1;
+}}
+@keyframes bounce-y2
+{  0%
+{    top: 0   
+} 
+50%{
+    top:20 ;
+} 
+100%
+{    top: 30%
+}}
+/* bounce 3 */
+@keyframes bounce-x3{
+    0%
+{    left: 0
+}  100%
+{    left: 60%
+}}
+@keyframes bounce-y3
+{  0%
+{    top: 0
+}  100%
+{    top: 20%
+}}
+/* bounce4 */
+@keyframes bounce-x4{
+    0%
+{    left: 0;
+    opacity: 1 ;
+}  100%
+{    left: 60%;
+     opacity: .5 ;
+
+}}
+@keyframes bounce-y4
+{  0%
+{    top: 50%;
+     opacity: .8 ;
+
+}  100%
+{    top: 70%;
+    opacity: 1;
+
+
+}}
+/* bounce4 */
+@keyframes bounce-x5{
+    0%
+{    left: 10;
+    opacity: 1 ;
+}  100%
+{    left: 60%;
+     opacity: .5 ;
+
+}}
+@keyframes bounce-y5
+{  0%
+{    top: 10%;
+     opacity: .8 ;
+
+}  100%
+{    top: 40%;
+    opacity: 1;
+
+
+}}
 /* Extra section circles animation */
  

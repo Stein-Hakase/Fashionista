@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="./styles/mail-test.css" />
     <link rel="stylesheet" href="./styles/bootstrap.css" />
     <link rel="stylesheet" href="./styles/index.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
     <link
       rel="shortcut icon"
       href="./img/Fashionista favicon.svg"
@@ -28,11 +32,11 @@
 
           <img class="top-semi-circle1" src="./img/Blue semi circle.png" alt="">
               <div class=" logo-container ">
-                <img src="./img/Fashionista logo with wordmark.svg" alt="Fashionista">
+                <img id="logo" src="./img/Fashionista logo with wordmark.svg" alt="Fashionista">
               </div>
               <div class="hero-container ">
                 <!-- comming soon container -->
-                  <div class="d-flex">
+                  <div id="text-cs" class="d-flex">
                     <h5>COMING SOON </h5> 
                     <hr> 
                   </div>
@@ -94,14 +98,17 @@
 
    <!-- Main start here -->
    <main>
-     <section class="container work " >
+     <section class="container work " 
+     style="background: none;
+     padding: 0;"
+     >
        <!-- *** design little circles / dots ... -->
         <img class="work-semi-circle1" src="/img/work-section/Blue semi circle-4.png" alt="">
-        <img class="work-semi-circle2" src="/img/work-section/Blue semi circle-3.png" alt="">
-        <img class="work-semi-circle3" src="/img/work-section/Blue semi circle.png" alt="">
-        <img class="work-semi-circle4" src="/img/work-section/Blue semi circle-1.png" alt="">
-        <img class="work-semi-circle5" src="/img/work-section/Blue semi circle-5.png" alt="">
-        <img class="work-semi-circle6" src="/img/work-section/Blue semi circle-2.png" alt="">
+        <img  class="work-semi-circle2" src="/img/work-section/Blue semi circle-3.png" alt="">
+        <img   class="work-semi-circle3" src="/img/work-section/Blue semi circle.png" alt="">
+        <img  class="work-semi-circle4" src="/img/work-section/Blue semi circle-1.png" alt="">
+        <img  class="work-semi-circle5" src="/img/work-section/Blue semi circle-5.png" alt="">
+        <img  class="work-semi-circle6" src="/img/work-section/Blue semi circle-2.png" alt="">
 
 
         <!-- *** -->
@@ -110,9 +117,12 @@
           <hr class="h2-border">
         </div>
         <!-- How it works Cards -->
-        <div class="row work-cards ">
+        <div class="row work-cards "   >
           
-          <div class=" card col-lg-4 my-4 mx-2 ">
+          <div data-aos="fade-down-right" 
+          data-aos-duration="1000"
+          class=" card col-lg-4 my-4 mx-2 "
+         >
                <div class="card-logo 
                mx-auto
                d-flex
@@ -132,7 +142,9 @@
                </p>
           </div>
           <!-- *************** -->
-            <div class=" card col-lg-4 my-4 mx-2 ">
+            <div data-aos="flip-down"
+            data-aos-duration="1500" 
+            class=" card col-lg-4 my-4 mx-2 ">
               <div class="progress card-progress">
                 <div class="progress-bar" role="progressbar" style="width: 25% ; background-color: #1034A6;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
@@ -157,7 +169,10 @@
             </p>
            </div>
           <!-- *************** -->
-          <div class=" card col-lg-4  my-4 mx-2">
+          <div data-aos="fade-down-left" 
+          data-aos-duration="1200"
+          class=" card col-lg-4  my-4 mx-2"
+       >
             <div class="progress card-progress">
               <div class="progress-bar" role="progressbar" style="width: 100% ; background-color: #FFBE0B;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
@@ -268,11 +283,11 @@
                   in order to get cool cloth combination for them</p>
                   </div>
             </div>
-            <div class="col-md-4 ">
-              <a data-fslightbox href="./img/screens/screen (1).png"><img 
+            <div class="col-md-4 d-flex justify-content-center">
+              <a data-fslightbox href="./img/screens/screen (5).png"><img 
                 class="img-fluid "
                
-                src="./img/screens/screen (1).png" alt=""></a>
+                src="./img/screens/screen (5).png" alt=""></a>
             </div>
           </div>
         </div>
@@ -290,11 +305,11 @@
                   combination the app has for you for that event.</p>
                   </div>
             </div>
-            <div class="col-md-4 ">
-              <a data-fslightbox href="./img/screens/screen (2).png"><img 
+            <div class="col-md-4 d-flex justify-content-center">
+              <a data-fslightbox href="./img/screens/screen (6).png"><img 
                 class="img-fluid "
                
-                src="./img/screens/screen (2).png" alt=""></a>
+                src="./img/screens/screen (6).png" alt=""></a>
             </div>
           </div>
           
@@ -316,11 +331,11 @@
                   provide links to stores where you can get them.</p>
                   </div>
             </div>
-            <div class="col-md-4 ">
-              <a data-fslightbox href="./img/screens/screen (3).png"><img 
+            <div class="col-md-4 d-flex justify-content-center">
+              <a data-fslightbox href="./img/screens/screen (1).png"><img 
                 class="img-fluid "
                
-                src="./img/screens/screen (3).png" alt=""></a>
+                src="./img/screens/screen (1).png" alt=""></a>
             </div>
           </div>
         </div>
@@ -342,11 +357,11 @@
                   This would be used to generate combinstions for you.</p>
                   </div>
             </div>
-            <div class="col-md-4 ">
-              <a data-fslightbox href="./img/screens/screen (4).png"><img 
+            <div class="col-md-4 d-flex justify-content-center">
+              <a data-fslightbox href="./img/screens/screen (2).png"><img 
                 class="img-fluid "
                
-                src="./img/screens/screen (4).png" alt=""></a>
+                src="./img/screens/screen (2).png" alt=""></a>
             </div>
           </div>
         </div>
@@ -367,11 +382,11 @@
                   make cool cloth suggestion combination for you</p>
                   </div>
             </div>
-            <div class="col-md-4 ">
-              <a data-fslightbox href="./img/screens/screen (5).png"><img 
+            <div class="col-md-4 d-flex justify-content-center">
+              <a data-fslightbox href="./img/screens/screen (3).png"><img 
               class="img-fluid "
              
-              src="./img/screens/screen (5).png" alt=""></a>
+              src="./img/screens/screen (3).png" alt=""></a>
             </div>
           </div>
         </div>
@@ -392,11 +407,11 @@
                    the AI tech make the perfect combination suggestion</p>
                   </div>
             </div>
-            <div class="col-md-4 ">
-              <a data-fslightbox href="./img/screens/screen (6).png"><img 
+            <div class="col-md-4 d-flex justify-content-center">
+              <a data-fslightbox href="./img/screens/screen (4).png"><img 
                 class="img-fluid "
                
-                src="./img/screens/screen (6).png" alt=""></a>
+                src="./img/screens/screen (4).png" alt=""></a>
             </div>
           </div>
         </div>
@@ -455,4 +470,10 @@
 
   <script src="./js/custom-js/scrollAnimation.js"> </script>
   <script src="./js/custom-js/fslightbox.js"></script>
+  <script>
+    
+    AOS.init();
+    gsap.from("#logo", {duration: 3, x: 300, opacity: 0, scale: 0.5});
+    gsap.to('#text-cs', { duration: 2.5, ease: "bounce.out",delay :1 ,y: -500 });
+  </script>
 </html>
